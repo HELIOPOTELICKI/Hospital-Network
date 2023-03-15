@@ -8,7 +8,7 @@
           <q-avatar>
             <img :src="quasarLogo" />
           </q-avatar>
-          Quasar + Google Maps
+          Hospital Network
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -21,26 +21,7 @@
     >
       <!-- drawer content -->
       <q-tabs vertical inline-label active-color="primary" align="left">
-        <q-route-tab icon="map" label="padrão" to="/" exact />
-        <q-route-tab
-          icon="style"
-          label="estilo customizado"
-          to="/map-custom-style"
-          exact
-        />
-        <q-route-tab
-          icon="directions_walk"
-          label="StreetView"
-          to="/streetview"
-          exact
-        />
-        <q-route-tab
-          icon="alt_route"
-          label="Directions"
-          to="/directions"
-          exact
-        />
-        <q-route-tab icon="push_pin" label="Custom Marker" to="/marker" exact />
+        <q-route-tab icon="push_pin" label="All Markers" to="/marker" exact />
       </q-tabs>
     </q-drawer>
 
@@ -56,7 +37,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue';
-import quasarLogo from 'assets/images/quasar-maps-logo.svg';
+import quasarLogo from 'assets/images/hospital-network-icon.svg';
 
 export default defineComponent({
   setup() {
