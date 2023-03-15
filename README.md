@@ -1,46 +1,59 @@
-# hospital-network-app
+# Quasar Google Maps 🗺️
 
-This template should help get you started developing with Vue 3 in Vite.
+![Quasar Google Maps](./src/assets/images/logo_readme.png)
 
-## Recommended IDE Setup
+Olá, seja bem-vindo ao projeto. Nesse repositório você encontrará exemplos de Serviços disponíveis no SDK do Google Maps para javascript.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Para você rodar o projeto local, é necessário ter uma conta no GCP (Google Cloud Plataform), o Google oferece 200 dólares de crédito inicial, é mais do que o suficiente para você testar os serviços disponibilizados pelo Google.
 
-## Type Support for `.vue` Imports in TS
+Assim que você estiver com a conta, é necessário criar um projeto no console do GCP, e ativar a API do Google Maps, para mais informações sobre como prosseguir clique [aqui](https://developers.google.com/maps).
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Assim que você estiver com a chave da API, é necessário criar um arquivo `.env` e inserir a chave e o valor, como exemplificado no arquivo `.env.example`.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Agora você está pronto para iniciar o projeto🥳
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+#
 
-## Customize configuration
+### Como Contribuir 💻
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Para contribuir é necessário relizar as seguintes tarefas:
 
-## Project Setup
+- É necessário fazer um deploy prévio da aplicação e disponibilizar nos comentários do pull request o link.
+- É necessário que no comentário do pr seja descrito a alteração realizada, tanto para correção de bugs quanto desenvolvimento de novas features.
+- É necessário seguir boas práticas que serão revisadas no pull request.
 
-```sh
-npm install
+#
+
+### Instalar as dependências 📦
+
+```bash
+npm i
 ```
 
-### Compile and Hot-Reload for Development
+### Iniciar servidor de desenvolvimento 🚧
 
-```sh
-npm run dev
+```bash
+quasar dev -m pwa
 ```
 
-### Type-Check, Compile and Minify for Production
+### Corrigir estilos e padrão de código (lint) 📝
 
-```sh
-npm run build
+```bash
+npm run lint
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Formatar os arquivos 📝
 
-```sh
-npm run test:unit
+```bash
+npm run format
 ```
+
+### Construir aplicação para produção 🚀
+
+```bash
+quasar build -m pwa
+```
+
+### Constomizar configuração do APP
+
+See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
